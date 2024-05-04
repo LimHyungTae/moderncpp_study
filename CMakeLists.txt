@@ -18,3 +18,13 @@ include_directories(
 add_executable(rvo_test src/rvo_test.cpp)
 target_link_libraries(rvo_test ${PCL_LIBRARIES})
 
+add_executable(sorting_with_lambda_expressions src/lambda_expressions/sorting_with_lambda_expressions.cpp)
+target_link_libraries(sorting_with_lambda_expressions ${PCL_LIBRARIES})
+
+add_executable(anonymous_function_w_lambda_function src/lambda_expressions/anonymous_function_with_lambda_expression.cpp)
+target_link_libraries(anonymous_function_w_lambda_function ${PCL_LIBRARIES})
+
+add_executable(std_transform src/stl_examples/std_transform.cpp)
+target_link_libraries(std_transform ${PCL_LIBRARIES})
+
+

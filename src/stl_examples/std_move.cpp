@@ -9,20 +9,24 @@ int main() {
     std::vector<int> moved_to = std::move(original);
 
     // 'original'과 'moved_to'의 내용 출력
+    // 출력: Original vector:
     std::cout << "Original vector: ";
     for (auto& item : original) {
         std::cout << item << " ";
     }
+
+    // 출력: Moved to vector: 1 2 3 4 5
     std::cout << "\nMoved to vector: ";
     for (auto& item : moved_to) {
         std::cout << item << " ";
     }
-    
-    std::cout << original.size() << std::endl;
-    std::cout << original.capacity() << std::endl;
+    std::cout << std::endl;
+
+    /** 출력: Size: 0
+     *       Capacity: 0
+     **/
+    std::cout << "Size: " << original.size() << std::endl;
+    std::cout << "Capacity: " << original.capacity() << std::endl;
 
     return 0;
 }
-// 출력
-// Original vector: 
-// Moved to vector: 1 2 3 4 5

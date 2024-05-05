@@ -11,6 +11,7 @@ int main() {
     set1.insert(set2.begin(), set2.end());
 
     // 병합된 unordered_set의 내용을 출력
+    // 출력: Combined set contents: grape apple orange banana mango
     std::cout << "Combined set contents: ";
     for (const std::string& fruit : set1) {
         std::cout << fruit << " ";
@@ -19,5 +20,3 @@ int main() {
 
     return 0;
 }
-// 출력
-// Combined set contents: apple banana mango orange grape 

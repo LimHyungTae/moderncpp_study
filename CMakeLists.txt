@@ -25,6 +25,9 @@ add_executable(anonymous_function_w_lambda_function src/lambda_expressions/anony
 target_link_libraries(anonymous_function_w_lambda_function ${PCL_LIBRARIES})
 
 # Functional program examples in STL algorithms
+add_executable(std_for_each src/stl_examples/std_for_each.cpp)
+target_link_libraries(std_for_each ${PCL_LIBRARIES})
+
 add_executable(std_insert_for_elements src/stl_examples/std_insert_for_elements.cpp)
 target_link_libraries(std_insert_for_elements ${PCL_LIBRARIES})
 

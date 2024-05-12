@@ -52,5 +52,20 @@ target_link_libraries(std_accumulation ${PCL_LIBRARIES})
 add_executable(std_accumulation_w_struct src/stl_examples/std_accumulation_w_struct.cpp)
 target_link_libraries(std_accumulation_w_struct ${PCL_LIBRARIES})
 
+add_executable(std_copy_if src/stl_examples/std_copy_if.cpp)
+target_link_libraries(std_copy_if ${PCL_LIBRARIES})
 
+add_executable(std_copy_if_with_set src/stl_examples/std_copy_if_with_set.cpp)
+target_link_libraries(std_copy_if_with_set ${PCL_LIBRARIES})
 
+add_executable(std_remove_if src/stl_examples/std_remove_if.cpp)
+target_link_libraries(std_remove_if ${PCL_LIBRARIES})
+
+add_executable(std_find_if src/stl_examples/std_find_if.cpp)
+target_link_libraries(std_find_if ${PCL_LIBRARIES})
+
+add_executable(std_find_if_w_struct src/stl_examples/std_find_if_w_struct.cpp)
+target_link_libraries(std_find_if_w_struct ${PCL_LIBRARIES})
+
+add_executable(std_replace_if src/stl_examples/std_replace_if.cpp)
+target_link_libraries(std_replace_if ${PCL_LIBRARIES})
